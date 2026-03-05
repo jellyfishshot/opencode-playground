@@ -28,7 +28,6 @@ After your PR is merged, sync back to keep remotes up to date:
 - Remote sync: `git remote add jsichi https://github.com/jsichi/opencode-playground.git` (if not already added) then `git fetch jsichi && git merge jsichi/main --no-commit --no-ff` or use `gh repo sync -b main`
 - Local sync: `git checkout main && git pull upstream/main`
 
-Use heredocs or write tool instead of shell strings for file operations to avoid parsing issues.
 - After rebasing onto upstream, force-push with `git push --force-with-lease`. Use git credential helper via `gh auth git-credential` for authentication.
 
 ## Dependencies
@@ -37,3 +36,6 @@ Use heredocs or write tool instead of shell strings for file operations to avoid
 - Maintain all dependencies in requirements.txt
 - Use `sudo` whenever administrative privileges are required
 - Always use `$GITHUB_TOKEN` environment variable for GitHub authentication in scripts and CI environments
+
+## Working with Files
+- Use heredocs or write tool instead of shell strings for file operations to avoid parsing issues
