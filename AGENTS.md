@@ -37,3 +37,6 @@ Use heredocs or write tool instead of shell strings for file operations to avoid
 - Maintain all dependencies in requirements.txt
 - Use `sudo` whenever administrative privileges are required
 - Always use `$GITHUB_TOKEN` environment variable for GitHub authentication in scripts and CI environments
+
+## Working with Files
+- Use heredocs or write tool instead of shell strings for file operations to avoid parsing issues
