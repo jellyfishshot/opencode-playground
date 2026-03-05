@@ -32,10 +32,9 @@ After your PR is merged, sync locally:
    gh repo sync jellyfishshot/opencode-playground --source jsichi/opencode-playground --branch main
    ```
 2. Then pull down the changes:
-   ```bash
-   git fetch all
-   git checkout main
-   git pull origin main
+    ```bash
+    git checkout main
+    git pull origin main
    ```
 
 ## Dependencies
